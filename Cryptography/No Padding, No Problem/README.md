@@ -29,9 +29,9 @@ Since `c = m ^ e mod n`
 
 ```
 c2 = (m * 2) ^ e mod n
-  = (m ^ e) * (2 ^ e) mod n
-  = ((m ^ e) mod n * (2 ^ e) mod n) mod n
-  = (c * (2^e) mod n) mod n
+   = (m ^ e) * (2 ^ e) mod n
+   = ((m ^ e) mod n * (2 ^ e) mod n) mod n
+   = (c * (2^e) mod n) mod n
 ```
 
 Connect to the oracle, give it `c2`, receive `m * 2`, divide by 2, then convert to hex and then ascii to get the flag.
