@@ -20,7 +20,7 @@ Let's start by figuring out the key length is.
 
 First, use `[b16_encode(x) for x in "abcdef0123456789"]` in python to get the b16 equivalent of the flag characters. The output is `['gb', 'gc', 'gd', 'ge', 'gf', 'gg', 'da', 'db', 'dc', 'dd', 'de', 'df', 'dg', 'dh', 'di', 'dj']`. This is very important, as we can see that the first character of every two is either `'g'` or `'d'` pre-encryption. Let's call the first character of every two character sequence the differentiator, as it differentiates between letters and numbers.
 
-This means that for every character in the key, the characters encrypted by that key character that are also differentiators should only result in two possible values. Let's check each key length to see which one satisfies that property.
+This means that for every character in the key, the characters encrypted by that key character that are also differentiators should only result in at most two possible values. Let's check each key length to see which one satisfies that property.
 
 ```python
 enc = "bgjpchahecjlodcdbobhjlfadpbhgmbeccbdefmacidbbpgioecobpbkjncfafbe"
@@ -31,7 +31,7 @@ for i in range(15):
     print(str(i) + "\n")
 ```
 
-Starting with the first row, check every other row (these are the rows of encrypted differentiators) and make sure that they all only have two characters per row.
+Starting with the first row, check every other row (these are the rows of encrypted differentiators) and make sure that they all have at most two characters per row.
 
 We see the only key length that satisfies this is 9. I've annotated the output to show which key character position encrypts which row of differentiators.
 
