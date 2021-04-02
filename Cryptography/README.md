@@ -1,7 +1,7 @@
 # picoCTF 2021
 
 ### Cryptography
-### 7/7 Solves, 110/110 points
+### 14/17 solves, 1540/2540 points
 <br></br>
 
 Again note that flags are not necessarily yours.
