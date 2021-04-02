@@ -14,6 +14,6 @@ We can just bruteforce using digits of 1,3,5,7, and 9. There are only (5 ^ 12) p
 
 Connect to the service provided and get a DDES encrypted flag. Use that in your solve script.
 
-[Here](ddessolve.py) is my solve script. 
+[Here](ddessolve.py) is my solve script. There are some optimizations that could be made, like making sure you don't use a pair of keys that's already been used in the other order.
 
 flag: `9af5126b7bc7f825b3cae0e32bd1acb4`
