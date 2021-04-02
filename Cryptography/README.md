@@ -3,7 +3,7 @@
 ### Cryptography
 ### 14/17 solves, 1540/2540 points
 ---
-Again note that flags are not necessarily yours.
+Again note that flags are not necessarily yours. Also note that total solves may not be completely accurate, but should still give you a good indication of the true difficulty.
 
 ### Challenges:
 
