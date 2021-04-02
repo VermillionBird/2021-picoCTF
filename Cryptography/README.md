@@ -14,3 +14,4 @@ Again note that flags are not necessarily yours.
 |[Easy Peasy](Easy%20Peasy)|428 solves|40 points|`picoCTF{7904ff830f1c5bba8f763707247ba3e1}`|
 |[New Caesar](New%20Caesar)|593 solves|60 points|`picoCTF{et_tu?_23217b54456fb10e908b5e87c6e89156}`|
 |[Mini RSA](Mini%20RSA)|374 solves|70 points|`picoCTF{e_sh0u1d_b3_lArg3r_7adb35b1}`|
+|[Daschund Attacls](Daschund%20Attacks)|591 solves|80 points|`picoCTF{proving_wiener_3878674}`|
