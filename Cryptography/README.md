@@ -16,3 +16,4 @@ Again note that flags are not necessarily yours.
 |[Mini RSA](Mini%20RSA)|374 solves|70 points|`picoCTF{e_sh0u1d_b3_lArg3r_7adb35b1}`|
 |[Daschund Attacls](Daschund%20Attacks)|591 solves|80 points|`picoCTF{proving_wiener_3878674}`|
 |[No Padding, No Problem](No%20Padding,%20No%20Problem)|326 solves|90 points|`picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_1772735}`|
+|[Pixelated](Pixelated)|602 solves|100 points|`picoCTF{d562333d}`|
