@@ -17,7 +17,7 @@ I will encrypt whatever you give me:
 
 The encrypted flag is absolutely massive, so it's clearly not simple RSA. We can confirm this by inputting `'a'` and seeing that the encryption is different than the normal RSA encryption of `'a'` with the given `n` and `e`. We then begin some reconaissance.
 
-If you encrypt a sequence of 2 or more characters repeatedly, sometimes you get different encryptions, which is strange. It turns out that the different encryptions are just scrambled versions of each other, and part of the encryption is always the encrypted version of the first letter, then a sequence unique to the first two letters, and so on. 
+If you encrypt a sequence of 2 or more characters repeatedly, sometimes you get different encryptions, which is strange. It turns out that the different encryptions are just scrambled versions of each other, and part of the encryption is always the encrypted version of the first letter, another part a sequence unique to the first two letters, and so on. 
 
 For instance, say you encrypt `'ab'`. The output of the text will be the concatenation, in some order, of the encryption of `'a'` and another sequence unique to `'ab'`. If you encrypt `'abc'`, the output of the text will be the concatentation, in some order, of the encryption of `'a'`, the sequence unique to `'ab'`, and a sequence unique to `'abc'`. And so on, for any input.
 
