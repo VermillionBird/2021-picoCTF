@@ -3,7 +3,6 @@
 ### Cryptography
 ### 14/17 solves, 1540/2540 points
 <br></br>
-
 Again note that flags are not necessarily yours.
 
 ### Challenges:
