@@ -7,7 +7,7 @@ Very few general challenges, most of them very easy point values.
 
 Again note that flags are not necessarily yours.
 
-### Categories:
+### Challenges:
 
 |Problem |Total Solves|Points|Flag|
 |---------|------|------|-------|
