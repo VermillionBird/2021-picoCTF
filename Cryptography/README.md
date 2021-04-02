@@ -20,3 +20,4 @@ Again note that flags are not necessarily yours.
 |[Play Nice](Play%20Nice)|416 solves|110 points|`25a0ea7ff711f17bddefe26a6354b2f3`|
 |[Compress and Attack](Compress%20and%20Attack)|163 solves|130 points|`picoCTF{sheriff_you_solved_the_crime}`|
 |[Scrambled: RSA](Scrambled%20RSA)|99 solves|140 points|`picoCTF{bad_1d3a5_4981729}`|
+|[New Vignere](New%20Vignere)|258 solves|300 points|`picoCTF{3489de46040aa96e55be9c1251172676}`|
