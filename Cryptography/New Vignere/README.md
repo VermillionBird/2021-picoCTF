@@ -31,7 +31,7 @@ for i in range(15):
     print(str(i) + "\n")
 ```
 
-Starting with the first row, check every other row (these are the rows of encrypted differentiators) and make sure that they all have at most two characters per row.
+This script will print blocks of rows, one block per key length. For each block, starting with the first row, check every other row (these are the rows of encrypted differentiators) and make sure that they all have at most two characters per row.
 
 We see the only key length that satisfies this is 9. I've annotated the output to show which key character position encrypts which row of differentiators.
 
