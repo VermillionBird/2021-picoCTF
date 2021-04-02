@@ -3,9 +3,9 @@
 ### General Skills
 ### 7/7 Solves, 110/110 points
 ---
-Very few general challenges, most of them very easy point values.
+Very few general challenges, most of them very easy point values. 
 
-Again note that flags are not necessarily yours.
+Again note that flags are not necessarily yours. Also note that total solves may not be completely accurate, but should still give you a good indication of the true difficulty.
 
 ### Challenges:
 
