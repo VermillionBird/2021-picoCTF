@@ -18,7 +18,7 @@ def double_decrypt(msg, KEY1, KEY2):
     dec_msg = cipher1.decrypt(b)
     cipher2 = DES.new(KEY2, DES.MODE_ECB)
     return cipher2.decrypt(dec_msg)
-seen = []
+
 for combo in itertools.product('13579', repeat=6):
     key = pad(''.join(combo))
     if key not in seen:
