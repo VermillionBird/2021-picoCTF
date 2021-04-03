@@ -6,7 +6,17 @@ Another slight twist on a classic, see if you can recover the flag. (Wrap with p
 
 ---
 
-Opening up the provided program, we see that it is essentially the same as [New Caesar](../New%20Caesar/) except using Vigenere instead of Caesar. I will assume you have read New Caesar or solved it. Futhermore, we see the key is all letters `a-p`, with length less than 15, and the flag is all hex.
+Opening up the provided program, we see that it is essentially the same as [New Caesar](../New%20Caesar/) except using Vigenere instead of Caesar. I will assume you have read New Caesar or solved it. 
+
+```python
+flag = "redacted"
+assert all([c in "abcdef0123456789" for c in flag])
+
+key = "redacted"
+assert all([k in ALPHABET for k in key]) and len(key) < 15
+```
+
+Futhermore, we see the key is all letters `a-p`, with length less than 15, and the flag is all hex.
 
 Vigenere is essentially just Caesar Cipher with a different shift for each character. For instance, with a key of `'abcdef'`, encrypting `'sampleplaintext'` with Vigenere is as follows:
 
