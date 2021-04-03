@@ -11,7 +11,7 @@ Again note that flags are not necessarily yours. Also note that total solves may
 
 |Problem |Total Solves|Points|Flag|
 |---------|------|------|-------|
-|[Information](Information)|2101 solves|10 points|`picoCTF{the_m3tadata_1s_modified}`|
+|[information](information)|2101 solves|10 points|`picoCTF{the_m3tadata_1s_modified}`|
 |[Weird File](Weird%20File)||20 points|`picoCTF{m4cr0s_r_d4ng3r0us}`|
 |[Matryoshka doll](Matryoshka%20doll)|2067 solves|30 points|`picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}`|
 |[tunn3l v1s10n](tunn3l%20v1s10n)|311 solves|40 points|`picoCTF{qu1t3_a_v13w_2020}`|
