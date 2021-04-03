@@ -76,7 +76,44 @@ Looking at the rest of the code, the flag is encrypted with the first bytes of t
 
 Our attack will be as follows:
 
-First, retrieve the encrypted flag. Decode it from hex and store the bytes in a flag variable. Next, encrypt `(50000-len(flag))` gibberish characters. This will wrap us around to the beginning of the key file, and the next bytes we encrypt will reuse the bytes of the key used to encrypt the flag. Encrypt `len(flag)` characters. I used just `'A'`s. Retrieve the output of this encryption, decode it from hex, and store the bytes in another variable.
+```python
+from pwn import *
+
+r = remote('mercury.picoctf.net', 11188)
+r.recv()
+r.recvuntil('\n')
+flag = r.recvuntil('\n').decode('ascii').strip()
+flag = bytes.fromhex(flag)
+```
+
+First, retrieve the encrypted flag. Decode it from hex and store the bytes in a flag variable. 
+
+```python
+r.recv()
+r.sendline('A'*(50000-len(flag)))
+r.recvuntil('\n\n')
+```
+
+Next, encrypt `(50000-len(flag))` gibberish characters. This will wrap us around to the beginning of the key file, and the next bytes we encrypt will reuse the bytes of the key used to encrypt the flag. 
+
+```python
+r.recv()
+r.sendline('A'*len(flag))
+ret = r.recv().replace(b'Here ya go!\n', b'').strip()
+ret = bytes.fromhex(ret.decode('ascii'))
+```
+
+Encrypt `len(flag)` characters. I used just `'A'`s. Retrieve the output of this encryption, decode it from hex, and store the bytes in another variable.
+
+```python
+def byte_xor(ba1, ba2):
+    return bytes([_a ^ _b for _a, _b in zip(ba1, ba2)])
+
+
+key = byte_xor(b'A' * len(flag), ret)
+flag = byte_xor(key, flag)
+print(flag.decode('ascii'))
+```
 
 Now xor the bytes of the encrypted `'A'`s with the `'A'`s. This will return the bytes of the key used in the encryption. `flag` is encrypted using the same key bytes, so xor flag with the key bytes to get the plaintext flag. Wrap with `picoCTF{}`.
 
