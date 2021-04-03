@@ -17,7 +17,7 @@ ciphertext (c): 1220012318588871886132524757898884422174534558055593713309088304
 
 As mentioned in [Mind your Ps and Qs](../Mind%20your%20Ps%20and%20Qs/), `c = m ^ e mod n`. However, when `e` is small, such as 3, `m ^ e` could be less than `n`, meaning that `c = m ^ e`, which is solveable. In the challenge description however, we see that `m ^ e` is a little larger than `N`.
 
-This means that `c = m ^ e mod n` means that `c + k*n = m ^ e` for some integer `k` that is small enough to brute force.
+This means that `c + k*n = m ^ e` for some integer `k` that is small enough to brute force.
 
 At `k = 3533` we get our flag.
 
