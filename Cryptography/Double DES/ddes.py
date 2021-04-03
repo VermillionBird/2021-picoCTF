@@ -39,7 +39,6 @@ def double_encrypt(m):
 
 print("Here is the flag:")
 print(double_encrypt(FLAG))
-print(KEY1, KEY2)
 
 while True:
     inputs = get_input()
