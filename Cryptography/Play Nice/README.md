@@ -6,7 +6,7 @@ Not all ancient ciphers were so bad... The flag is not in standard format. `nc m
 
 ---
 
-Opening the provided python file, we see that we need to decrypt an encrypted message, and if we get it correct, we get the flag. This is just a Playfiar cipher. Any online decoder works fine.
+Opening the provided python file, we see that we need to decrypt an encrypted message, and if we get it correct, we get the flag. The encryption is just a Playfair cipher. Any online decoder works fine.
 
 Connecting to the service we see:
 
