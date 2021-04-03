@@ -12,7 +12,7 @@ Salsa20 is a stream cipher that is cryptographically secure as of right now. So 
 
 `zlib` uses DEFLATE, a lossless method of compression. Lossless methods of compression depend on the fact that typical data will have redundancies in characters. While this writeup will not go into details on zlib's compression method, it suffices to say that the more repetitions of sequences of characters there are, the shorter the resulting encoding. 
 
-![](/Images/compressattack.png)
+![](/Images/compressattack.PNG)
 
 You can try it out in python yourself.
 
