@@ -56,7 +56,7 @@ bbb  -> key pos 8
 odp
 ```
 
-Now we begin determining the key. Note that `ord('g')-ord('d') = 3 mod 16`.
+Now we begin determining the key. Instead of solving for the key used for encryption, you can just solve for the key used for decryption. Note that `ord('g')-ord('d') = 3 mod 16`.
 
 For key pos 1, `ord('e')-ord('b') = 3 mod 16` so `'e'` is `'g'` shifted and `'b'` is `'d'` shifted. The shift to undo it is therefore 2.
 
@@ -76,7 +76,7 @@ For key pos 8, we only have one character, `'b'`. This could be either `'g'` or 
 
 For key pos 9, `ord('e')-ord('b') = 3 mod 16` so `'e'` is `'g'` shifted and `'b'` is `'d'` shifted. The shift to undo it is therefore 2.
 
-Our key is therefore `'cnkfb(b,e)d(c,f)c'`. I tried `'cnkfbbdcc'` which worked.
+Our decryption key is therefore `'cnkfb(b,e)d(c,f)c'`. I tried `'cnkfbbdcc'` which worked.
 
 [Here](newvigneresolve.py) is my solve script.
 
