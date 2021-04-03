@@ -9,11 +9,68 @@ A one-time pad is unbreakable, but can you manage to recover the flag? (Wrap wit
 
 Download `otp.py`. OTPs are unbreakable, as mentioned in the challenge description, but only if implemented properly. Let's take a look at the program.
 
+```python
+import os.path
+
+KEY_FILE = "key"
+KEY_LEN = 50000
+FLAG_FILE = "flag"
+```
+
 First, notice that the flag is retrieved from a file, and is 50000 bytes long. 
+
+```python
+def startup(key_location):
+	flag = open(FLAG_FILE).read()
+	kf = open(KEY_FILE, "rb").read()
+
+	start = key_location
+	stop = key_location + len(flag)
+
+	key = kf[start:stop]
+	key_location = stop
+
+	result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ k), flag, key))
+	print("This is the encrypted flag!\n{}\n".format("".join(result)))
+
+	return key_location
+```
 
 `startup(key_location)` takes an index as a parameter, and reads bytes from the key file starting from that index. It then uses the key to xor with the flag, and prints out the encrypted flag. Finally, it returns the ending location.
 
+```python
+def encrypt(key_location):
+	ui = input("What data would you like to encrypt? ").rstrip()
+	if len(ui) == 0 or len(ui) > KEY_LEN:
+		return -1
+
+	start = key_location
+	stop = key_location + len(ui)
+
+	kf = open(KEY_FILE, "rb").read()
+
+	if stop >= KEY_LEN:
+		stop = stop % KEY_LEN
+		key = kf[start:] + kf[:stop]
+	else:
+		key = kf[start:stop]
+	key_location = stop
+
+	result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ k), ui, key))
+
+	print("Here ya go!\n{}\n".format("".join(result)))
+
+	return key_location
+```
+
 `encrypt(key_location)` is similar, but encrypts your input. Crucially, however, notice that if the data you'd like to encrypt ends up requiring more bytes than there are remaining from the start location, it **wraps around to the beginning of the key file**. If you reuse a key, it is no longer an OTP and is vulnerable to attack.
+
+```python
+print("******************Welcome to our OTP implementation!******************")
+c = startup(0)
+while c >= 0:
+	c = encrypt(c)
+```
 
 Looking at the rest of the code, the flag is encrypted with the first bytes of the flag. Then, it encrypts what you request.
 
