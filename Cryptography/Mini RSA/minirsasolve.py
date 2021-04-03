@@ -13,12 +13,15 @@ for i in range(100000):
 
     try:
         print(str('%x' % + int(root)).decode('hex'))
+        print(i)
+        break
     except AttributeError:
         hexv = str('%x' % + int(root))
         pad = '0' * (len(hexv) % 2) + hexv
         try:
             print(bytes.fromhex(pad).decode('utf-8'))
             print(i)
+            break
         except:
             pass
     except:
