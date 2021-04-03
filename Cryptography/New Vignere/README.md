@@ -37,7 +37,6 @@ enc = "bgjpchahecjlodcdbobhjlfadpbhgmbeccbdefmacidbbpgioecobpbkjncfafbe"
 for i in range(15):
     for x in range(math.lcm(i,2)):
         print(enc[x::math.lcm(i,2)])  
-        #prints all characters encrypted by same key character and also either all differentiators or not differentiators)
     print(str(i) + "\n")
 ```
 
