@@ -19,9 +19,14 @@ The encrypted flag is absolutely massive, so it's clearly not simple RSA. We can
 
 If you encrypt a sequence of 2 or more characters repeatedly, sometimes you get different encryptions, which is strange. It turns out that the different encryptions are just scrambled versions of each other, and part of the encryption is always the encrypted version of the first letter, another part a sequence unique to the first two letters, and so on. 
 
+
 For instance, say you encrypt `'ab'`. The output of the text will be the concatenation, in some order, of the encryption of `'a'` and another sequence unique to `'ab'`. If you encrypt `'abc'`, the output of the text will be the concatentation, in some order, of the encryption of `'a'`, the sequence unique to `'ab'`, and a sequence unique to `'abc'`. And so on, for any input.
 
-Taking this, we can slowly bruteforce the flag. We first encrypt all the characters that might be in the flag. One of the encryptions of these characters will be in the given encrypted flag. The flag therefore starts with that letter. 
+![](/Images/scrambledrsa.png)
+
+Here, the encryption of `'a'` is highlighted green. The sequence unique to `'ab'` is highlighted red. The sequence unique to `'abc'` is highlighted blue. You can see it matches my description.
+
+Knowing this, we can slowly bruteforce the flag. We first encrypt all the characters that might be in the flag. One of the encryptions of these characters will be in the given encrypted flag. The flag therefore starts with that letter. 
 
 Next, we encrypt all the two character sequences starting with the letter we just found. These encryptions will have enc(first_letter) in the encryption, so we remove it to get the sequence unique to those two letters. One of these sequences will appear in the encrypted flag, so the flag therefore starts with those two letters.
 
