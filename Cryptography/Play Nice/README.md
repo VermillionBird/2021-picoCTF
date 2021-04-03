@@ -16,6 +16,6 @@ Here is the encrypted message: h5a1sqeusdi38obzy0j5h3ift7s2r2
 What is the plaintext message? 
 ```
 
-I used [dcode](https://www.dcode.fr/playfair-cipher). Input the alphabet, using a 6x6 matrix. Input the encrypted message to get the plaintext message. dcode outputs it in all caps, so convert it to lowercase before inputting it into the service.
+I used [dcode](https://www.dcode.fr/playfair-cipher). Input the alphabet, using a 6x6 matrix. Input the encrypted message to get the plaintext message. dcode outputs it in all caps, so convert it to lowercase before inputting it into the service. The service then returns the flag.
 
 flag: `25a0ea7ff711f17bddefe26a6354b2f3`
