@@ -19,7 +19,7 @@ Looking at the rest of the code, the flag is encrypted with the first bytes of t
 
 Our attack will be as follows:
 
-First, retrieve the encrypted flag. Decode it from hex and store the bytes in a flag variable. Next, encrypt `(50000-len(flag))` gibberish characters. This will wrap us around to the beginning of the key file, and the next bytes we encrypt will reuse the bytes used to encrypt the flag. Encrypt `len(flag)` characters. I used just `'A'`. Retrieve the output of this encryption, decode it from hex, and store the bytes in another variable.
+First, retrieve the encrypted flag. Decode it from hex and store the bytes in a flag variable. Next, encrypt `(50000-len(flag))` gibberish characters. This will wrap us around to the beginning of the key file, and the next bytes we encrypt will reuse the bytes of the key used to encrypt the flag. Encrypt `len(flag)` characters. I used just `'A'`. Retrieve the output of this encryption, decode it from hex, and store the bytes in another variable.
 
 Now xor the bytes of the encrypted `'A'`s with the `'A'`s. This will return the bytes of the key used in the encryption. `flag` is encrypted using the same key bytes, so xor flag with the key bytes to get the plaintext flag. Wrap with `picoCTF{}`.
 
