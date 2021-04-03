@@ -12,7 +12,7 @@ Again note that flags are not necessarily yours. Also note that total solves may
 |Problem |Total Solves|Points|Flag|
 |---------|------|------|-------|
 |[Information](Information)|2101 solves|10 points||
-|[Weird File](Weird%20File||20 points||
+|[Weird File](Weird%20File)||20 points||
 |[Matryoshka doll](Matryoshka%20doll)|2067 solves|30 points||
 |[tunn3l v1s10n](tunn3l%20v1s10n)|311 solves|40 points||
 |[Wireshark doo dooo do doo...](Wireshark%20doo%20dooo%20do%20doo)|1605 solves|50 points||
