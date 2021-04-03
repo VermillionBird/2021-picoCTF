@@ -28,7 +28,7 @@ Here, the encryption of `'a'` is highlighted green. The sequence unique to `'ab'
 
 Knowing this, we can slowly bruteforce the flag. We first encrypt all the characters that might be in the flag. One of the encryptions of these characters will be in the given encrypted flag. The flag therefore starts with that letter. 
 
-Next, we encrypt all the two character sequences starting with the letter we just found. These encryptions will have enc(first_letter) in the encryption, so we remove it to get the sequence unique to those two letters. One of these sequences will appear in the encrypted flag, so the flag therefore starts with those two letters.
+Next, we encrypt all the two character sequences starting with the letter we just found. These encryptions will have the encryption of the first letter in the encryption, so we remove it to get the sequence unique to the two letter sequence. One of these sequences will appear in the encrypted flag, so the flag therefore starts with those two letters.
 
 For three letters, we remove the encryption of the first letter and the sequence unique to the first two letters to get the sequence unique to the third letter. If it appears in the encrypted flag, the flag starts with those three letters.
 
