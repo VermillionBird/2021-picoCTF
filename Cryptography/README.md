@@ -21,4 +21,5 @@ Again note that flags are not necessarily yours. Also note that total solves may
 |[Double DES](Double%20DES)|215 solves|120 points|`9af5126b7bc7f825b3cae0e32bd1acb4`|
 |[Compress and Attack](Compress%20and%20Attack)|163 solves|130 points|`picoCTF{sheriff_you_solved_the_crime}`|
 |[Scrambled: RSA](Scrambled%20RSA)|99 solves|140 points|`picoCTF{bad_1d3a5_4981729}`|
+|[It is my Birthday 2](It%20is%20my%20Birthday%202)||270 points||
 |[New Vignere](New%20Vignere)|258 solves|300 points|`picoCTF{3489de46040aa96e55be9c1251172676}`|
