@@ -2,9 +2,11 @@
 ### Author: Danny
 ### Forensics: 90 points
 
-Figure out how they moved the [flag](tftp.pcapng).
+Figure out how they moved the [flag](https://mercury.picoctf.net/static/ed308d382ae6bcc37a5ebc701a1cc4f4/tftp.pcapng).
 
 ---
+
+Download the provided packet capture. 
 
 The title refers to TFTP (Trivial File Transfer Protocol), a protocol for transfering files.
 
