@@ -16,10 +16,10 @@ Again note that flags are not necessarily yours. Also note that total solves may
 |[Mini RSA](Mini%20RSA)|374 solves|70 points|`picoCTF{e_sh0u1d_b3_lArg3r_7adb35b1}`|
 |[Daschund Attacls](Daschund%20Attacks)|591 solves|80 points|`picoCTF{proving_wiener_3878674}`|
 |[No Padding, No Problem](No%20Padding,%20No%20Problem)|326 solves|90 points|`picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_1772735}`|
-|[Pixelated](Pixelated)|602 solves|100 points|`picoCTF{d562333d}`|
 |[Play Nice](Play%20Nice)|416 solves|110 points|`25a0ea7ff711f17bddefe26a6354b2f3`|
 |[Double DES](Double%20DES)|215 solves|120 points|`9af5126b7bc7f825b3cae0e32bd1acb4`|
 |[Compress and Attack](Compress%20and%20Attack)|163 solves|130 points|`picoCTF{sheriff_you_solved_the_crime}`|
 |[Scrambled: RSA](Scrambled%20RSA)|99 solves|140 points|`picoCTF{bad_1d3a5_4981729}`|
-|[It is my Birthday 2](It%20is%20my%20Birthday%202)||270 points||
+|[It is my Birthday 2](It%20is%20my%20Birthday%202)|170|270 points||
+|[Pixelated](Pixelated)|602 solves|200 points|`picoCTF{d562333d}`|
 |[New Vignere](New%20Vignere)|258 solves|300 points|`picoCTF{3489de46040aa96e55be9c1251172676}`|
