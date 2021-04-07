@@ -20,7 +20,7 @@ Again note that flags are not necessarily yours. Also note that total solves may
 |[Trivial Flag Transfer Protocol](Trivial%20Flag%20Transfer%20Protocol)|486 solves|90 points|`picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}`|
 |[Wireshark twoo twooo two twoo...](Wireshark%20twoo%20twooo%20two%20twoo)|1605 solves|100 points|`picoCTF{dns_3xf1l_ftw_deadbeef}`|
 |[Disk, disk, sleuth!](Disk,%20disk,%20sleuth!)|1044 solves|110 points|`picoCTF{f0r3ns1c4t0r_n30phyt3_564ff1a0}`|
-|[Milkslap](Milkslap)|420 solves|120 points|`picoCTF{imag3_m4n1pul4t10n_sl4p5}`|
 |[Disk, disk, sleuth! II](Disk,%20disk,%20sleuth!%20II)|806 solves|130 points|`picoCTF{f0r3ns1c4t0r_n0v1c3_db59daa5}`|
-|[Surfing the Waves](Surfing%20the%20Waves)|69 solves|250 points|`picoCTF{mU21C_1s_1337_c1faf2a7}`|
+|[Surfing the Waves](Surfing%20the%20Waves)|69 solves|150 points|`picoCTF{mU21C_1s_1337_c1faf2a7}`|
+|[Milkslap](Milkslap)|420 solves|200 points|`picoCTF{imag3_m4n1pul4t10n_sl4p5}`|
 |[Very very very Hidden](Very%20very%20very%20Hidden)|86 solves|300 points|`picoCTF{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}`|
