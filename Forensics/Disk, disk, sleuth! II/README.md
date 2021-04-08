@@ -8,6 +8,6 @@ All we know is the file with the flag is named `down-at-the-bottom.txt`... Disk 
 
 I used [Autopsy](https://www.autopsy.com/) for this. Open a case and add the image as a Disk Image file after unzipping the image. View File Types By Extension, then go to Documents, and then Plain Text. The flag is in the file.
 
-![](Images/autopsy.PNG)
+![](/Images/autopsy.PNG)
 
 flag: `picoCTF{f0r3ns1c4t0r_n0v1c3_db59daa5}`
