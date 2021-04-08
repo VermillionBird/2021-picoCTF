@@ -12,7 +12,9 @@ Here, we can see a lot of DNS requests to `[base64 string].reddshrimpandherring.
 
 ![](/Images/wireshark2.PNG)
 
-Looking at our packets, we see one with a different destination IP. The base64 in the query is `cGljb0NU`, which decoded from base64 is `picoCT`. Ok, let's add one last filter: `dns && dns.flags.response == 0 && frame.len<100 && ip.dst == 18.217.1.57`.
+Looking at our packets, we see one with a different destination IP. The base64 in the query is `cGljb0NU`, which decoded from base64 is `picoCT`. Ok, let's add one last filter: 
+
+`dns && dns.flags.response == 0 && frame.len<100 && ip.dst == 18.217.1.57`.
 
 The remaining packets give the base64: `cGljb0NURntkbnNfM3hmMWxfZnR3X2RlYWRiZWVmfQ==` which gives us the flag.
 
