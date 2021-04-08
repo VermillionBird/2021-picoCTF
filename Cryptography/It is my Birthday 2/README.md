@@ -12,9 +12,9 @@ According to [SHAttered.io](https://shattered.io/), SHA-1 has a practical crypto
 
 Taking a look at this image and looking over the [paper](https://shattered.io/static/shattered.pdf), we can see that the two PDFs will have a pre-determined prefix, then calculated collision blocks that will make the two PDFs have the same SHA1 hash **for any suffix appended to both the PDFs**.
 
-[This python script](https://github.com/nneonneo/sha1collider/blob/master/collide.py) generates two PDFs with the same SHA1 hash two input pdfs. 
+[This python script](https://github.com/nneonneo/sha1collider/blob/master/collide.py) generates two PDFs with the same SHA1 hash using two input pdfs. Use any secondary PDF you wish. I just slightly modified `invite.pdf` using an online PDF editor and used that as my second input pdf, but it doesnt matter. Run with `python3 collide.py invite.pdf invite2.pdf`
 
-[This python script I wrote](shatteredsolve.py) takes the two generated PDFs then appends the last 1000 bytes of `invite.pdf`. The generated PDFs will have the same SHA1 hash, have different contents, and have the same 1000 last bytes as the original invite, fulfilling the requirement.
+[This python script I wrote](shatteredsolve.py) takes the two generated PDFs then appends the last 1000 bytes of `invite.pdf`. The generated PDFs will have the same SHA1 hash, have different contents, and have the same 1000 last bytes as the original invite, fulfilling the requirement. Run with `python3 invite.pdf out-invite.pdf out-invite2.pdf`
 
 Upload them to the site to get the flag. At the time of this writeup, the site is not available and I regrettably did not write down the flag during the competition.
 
