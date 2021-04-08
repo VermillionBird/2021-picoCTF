@@ -14,6 +14,6 @@ After quite a bit of googling, I stumble across this [writeup](https://github.co
 
 After trying several different things, I managed to get the encoding scheme. Each frame in the wav file encoded a single digit hex number `0-f`. Combining these hex digits into a long hex string, then converting that to bytes outputted a valid file. This turned out to be the python program that generated the wav file. This also had the flag in it.
 
-[Here](surfing.py) is my solve script, and [here](surfingout.txt) is the outputted python program.
+[Here](surfing.py) is my solve script, and [here](surfingout.py) is the outputted python program.
 
 flag: `picoCTF{mU21C_1s_1337_c1faf2a7}`
