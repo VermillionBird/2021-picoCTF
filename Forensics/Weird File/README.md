@@ -2,7 +2,7 @@
 ### Author: 
 ### Forensics: 20 points
 
-[weird.docm](weird.docm)
+ What could go wrong if we let Word documents run programs? (aka "in-the-clear").[weird.docm](weird.docm).
 
 ---
 
