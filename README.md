@@ -5,7 +5,7 @@
 <br></br>
 Less challenges than 2019, many of them were much harder. However, the challenges were very fun, kudos to the picoCTF team!
 
-Please note that many flags have randomized suffixes, so our flags are not necessarily the same as yours. The process should still be the same however.
+Please note that many flags have randomized suffixes, so our flags are not necessarily the same as yours. This means that ports, files, and urls are also not necessarily the same as yours. The process should still be the same however.
 
 ### Categories:
 
