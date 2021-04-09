@@ -16,6 +16,6 @@ Taking a look at this image and looking over the [paper](https://shattered.io/st
 
 [This python script I wrote](shatteredsolve.py) takes the two generated PDFs then appends the last 1000 bytes of `invite.pdf`. The generated PDFs will have the same SHA1 hash, have different contents, and have the same 1000 last bytes as the original invite, fulfilling the requirement. Run with `python3 invite.pdf out-invite.pdf out-invite2.pdf`
 
-Upload them to the site to get the flag. At the time of this writeup, the site is not available and I regrettably did not write down the flag during the competition.
+Upload them to the site to get the flag.
 
-flag: `TBA`
+flag: `picoCTF{h4ppy_b1rthd4y_2_m3_88f5c0dd} `
