@@ -16,4 +16,4 @@ Please note that many flags have randomized suffixes, so our flags are not neces
 |[Forensics](Forensics)|13/13|1290/1290|
 |[General Skills](General%20Skills)|7/7|110/110|
 |[Reverse Engineering](Reverse-Engineering)|16/17|1680/2055|
-|[Web Exploitation](Web%20Exploitation)|17/18|1090/2590|
+|[Web Exploitation](Web%20Exploitation)|17/18|2090/2590|
