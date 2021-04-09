@@ -5,7 +5,7 @@
 ---
 We managed to solve all of the forensics challenges this year.
 
-Again note that flags are not necessarily yours. Also note that total solves may not be completely accurate, but should still give you a good indication of the true difficulty.
+Again note that flags are not necessarily yours. This means that ports, files, and urls are also not necessarily the same as yours. Also note that total solves may not be completely accurate, but should still give you a good indication of the true difficulty.
 
 ### Challenges:
 
