@@ -1,6 +1,6 @@
 # It is my Birthday 2
 ### Author:
-### Cryptography: 270 points
+### Cryptography: 170 points
 
 "My birthday is coming up again, but I want to have a very exclusive party for only the best cryptologists. See if you can solve my challenge, upload 2 valid PDFs that are different but have the same SHA1 hash. They should both have the same 1000 bytes at the end as the original invite. [invite.pdf](invite.pdf)
 
